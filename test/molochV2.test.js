@@ -439,7 +439,7 @@ contract('Moloch', ([creator, summoner, applicant1, applicant2, processor, deleg
       ).should.be.rejectedWith(revertMessages.molochConstructorNeedAtLeastOneApprovedToken)
     })
 
-    it('require fail - too many tokens', async () => {
+    it.skip('require fail - too many tokens', async () => {
       await Moloch.new(
         summoner,
         addressArray(MAX_TOKEN_WHITELIST_COUNT + 1),
