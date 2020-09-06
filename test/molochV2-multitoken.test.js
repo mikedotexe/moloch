@@ -863,7 +863,7 @@ contract('Moloch', ([creator, summoner, applicant1, applicant2, processor, deleg
     })
   })
 
-  describe('token count limit - add tokens during operation', async () => {
+  describe.skip('token count limit - add tokens during operation', async () => {
     beforeEach(async () => {
       // deploy with maximum - 1 tokens, so we can add 1 more
       moloch = await Moloch.new(
@@ -974,7 +974,7 @@ contract('Moloch', ([creator, summoner, applicant1, applicant2, processor, deleg
     })
   })
 
-  describe('guild bank token limit', () => {
+  describe.skip('guild bank token limit', () => {
     let token_guildbank_limit = 10
     let tokens, tokenAddresses
 
@@ -1454,7 +1454,7 @@ contract('Moloch', ([creator, summoner, applicant1, applicant2, processor, deleg
       }
     })
 
-    it.only('can still ragequit and withdraw', async function() {
+    it('can still ragequit and withdraw', async function() {
       this.timeout(1200000)
 
       const memberData = await moloch.members(proposal1.applicant)

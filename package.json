@@ -2,6 +2,9 @@
   "name": "moloch",
   "version": "1.0.0",
   "description": "",
+  "dependencies": {
+    "near-web3-provider": "https://github.com/near/near-web3-provider"
+  },
   "devDependencies": {
     "@nomiclabs/buidler": "^1.1.2",
     "@nomiclabs/buidler-etherscan": "^1.1.2",
